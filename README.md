@@ -1,7 +1,7 @@
 # Motivation
 I wanted to add a soundboard for my DND sessions, but I faced some issues:
 - Existing soundboards will have their audio echo-cancelled by discord while aggregating the output. 
-- The loopback app is really cool and works well, but it out of my budget.
+- The loopback app is really cool and works well, but it's outside my budget.
 - Existing soundboard bots require typing in the names of the clips, but I want something more instant.
 
 # Solution
