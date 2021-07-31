@@ -17,7 +17,8 @@ This only works with Nodejs 12 / darwin / x64 as I have only manually compiled t
 4. Place your clips in the `clips` folder. Number them accordingly from 1 to 10.
 
 ## Usage
-1. Enter a voice channel
-2. `s!start`
-1. Play the respective sound clips by pressing the combination of `ctrl+cmd+n`, where n is a digit from 0 to 9. (0 is clip 10)
-6. When you are done, `s!stop` to disconnect the bot.
+1. `TOKEN=<your bot token> npm start`
+2. Enter a voice channel
+3. Type `s!start` in a bot accessible channel
+4. Play the respective sound clips by pressing the combination of `ctrl+cmd+n`, where n is a digit from 0 to 9. (0 is clip 10)
+5. When you are done, `s!stop` to disconnect the bot.
