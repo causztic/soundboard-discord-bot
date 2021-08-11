@@ -20,5 +20,5 @@ This only works with Nodejs 12 / darwin / x64 as I have only manually compiled t
 1. `TOKEN=<your bot token> npm start`
 2. Enter a voice channel
 3. Type `s!start` in a bot accessible channel
-4. Play the respective sound clips by pressing the combination of `ctrl+cmd+n`, where n is a digit from 0 to 9. (0 is clip 10)
+4. TODO: add custom mapping reads - take a look at `src/keycodes.js` to see the current combinations.
 5. When you are done, `s!stop` to disconnect the bot.
