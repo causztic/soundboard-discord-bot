@@ -1,18 +1,17 @@
-'use strict';
+import '@discordjs/opus';
 
-require('@discordjs/opus');
-const Discord = require('discord.js');
-const ioHook = require('iohook');
-const { convertKeyPressToAudio } = require('./src/keycodes');
+import Discord from 'discord.js';
+import ioHook from 'iohook';
+import { convertKeyPressToAudio, KeyPressEvent } from './src/keycodes';
 
 const client = new Discord.Client();
-let voiceConnection;
+let voiceConnection: Discord.VoiceConnection;
 
 client.on('message', async message => {
-  if (message.content === 's!start' && message.member.voice.channel) {
+  if (message.content === 's!start' && message.member?.voice?.channel) {
     voiceConnection = await message.member.voice.channel.join();
 
-    ioHook.on('keyup', (event) => {
+    ioHook.on('keyup', (event: KeyPressEvent) => {
       const clip = convertKeyPressToAudio(event);
 
       if (clip !== null) {
