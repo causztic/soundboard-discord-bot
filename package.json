@@ -2,10 +2,10 @@
   "name": "soundboard-discord-bot",
   "version": "0.2.0",
   "description": "Soundboard bot for Discord for quick sound clips",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "ts-node index.ts"
   },
   "author": "Lim Yao Jie",
   "license": "MIT",
@@ -13,6 +13,8 @@
     "@discordjs/opus": "^0.5.3",
     "discord.js": "^12.5.3",
     "ffmpeg-static": "^4.4.0",
-    "iohook": "^0.9.3"
+    "iohook": "^0.9.3",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3"
   }
 }
