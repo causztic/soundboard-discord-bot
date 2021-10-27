@@ -1,3 +1,5 @@
 node_modules
-clips/*.mp3
+clips/*
+!.keep
 .DS_Store
+.vscode

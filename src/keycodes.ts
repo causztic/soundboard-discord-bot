@@ -21,16 +21,13 @@ const getKey = (keyCode: number): string => {
 }
 
 
-export const convertKeyPressToAudio = ({ ctrlKey, metaKey, keycode }: KeyPressEvent) => {
+export const convertKeyPressToFile = ({ ctrlKey, metaKey, keycode }: KeyPressEvent) => {
   // TODO: support reading a file for a list of macros and mappings?
   const key = getKey(keycode);
   console.log(ctrlKey, metaKey, keycode, key);
 
   if (ctrlKey && metaKey && key) {
-    const clip = `${key}.mp3`;
-    console.log(`playing ${clip}`);
-
-    return clip;
+    return key;
   }
 
   return null;
